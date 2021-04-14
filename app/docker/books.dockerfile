@@ -4,7 +4,7 @@ LABEL maintainer="Jonathan Henrique Medeiros"
 
 ENV NODE_ENV=development
 
-COPY ../ /var/www
+COPY /app /var/www
 
 WORKDIR /var/www
 
