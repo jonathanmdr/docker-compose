@@ -20,7 +20,7 @@ services:
     image: mongo:latest
     container_name: mongodb  
     networks:
-        - production-network
+      - production-network
 
   app-1:
     build:
@@ -29,11 +29,11 @@ services:
     image: jonathanmdr/books
     container_name: books-1
     ports:
-    - "3000"
+      - "3000"
     networks:
-    - production-network
+      - production-network
     depends_on:
-    - "mongodb"
+      - "mongodb"
 
   app-2:
     build:
@@ -42,11 +42,11 @@ services:
     image: jonathanmdr/books
     container_name: books-2
     ports:
-    - "3000"
+      - "3000"
     networks:
-    - production-network
+      - production-network
     depends_on:
-    - "mongodb"
+      - "mongodb"
 
   app-3:
     build:
@@ -55,11 +55,11 @@ services:
     image: jonathanmdr/books
     container_name: books-3
     ports:
-    - "3000"
+      - "3000"
     networks:
-    - production-network
+      - production-network
     depends_on:
-    - "mongodb"
+      - "mongodb"
 
 
 networks:
