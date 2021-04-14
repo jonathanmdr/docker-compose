@@ -1,8 +1,15 @@
 FROM node:latest
-MAINTAINER Douglas Quintanilha
+
+LABEL maintainer="Jonathan Henrique Medeiros"
+
 ENV NODE_ENV=development
-COPY . /var/www
+
+COPY ../ /var/www
+
 WORKDIR /var/www
-RUN npm install 
+
+RUN npm install
+
 ENTRYPOINT ["npm", "start"]
+
 EXPOSE 3000
