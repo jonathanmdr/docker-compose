@@ -1,11 +1,17 @@
 name: Docker Compose Actions Workflow
-on: push
+on:
+  push:    
+    branches:
+      - master
 jobs:
-  test:
+  pipeline:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build the App
+      - name: Build apps
         run: docker-compose up -d
-      - name: Test
-        run: docker run --network container:books-1 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:3000/
+      - name: Test apps
+        run: |
+          docker run --network container:books-1 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:3000/
+          docker run --network container:books-2 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:3000/
+          docker run --network container:books-3 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:3000/          
