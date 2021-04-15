@@ -1,5 +1,7 @@
 # docker-compose
 
+[![Build | branch: master](https://github.com/jonathanmdr/docker-compose/actions/workflows/docker-publish.yml/badge.svg?branch=master)](https://github.com/jonathanmdr/docker-compose/actions/workflows/docker-publish.yml)
+
 Projeto de estudo sobre `docker-compose` e algumas coisas sobre o seu uso.
 
 ### Sobre o projeto:
