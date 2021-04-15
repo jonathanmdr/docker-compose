@@ -4,7 +4,7 @@ Projeto de estudo sobre `docker-compose` e algumas coisas sobre o seu uso.
 
 ### Sobre o projeto:
 O projeto consiste em um microserviço de uma loja de livros, a implementação não é completa pois não é o intuíto neste momento.
-No nosso contexto teremos somente a visualização da home com os livros cadastrados sendo listados, todos os livros da aplicação são cadastrados de forma estática através do endipoint `/seed`, que é o responsável por fazer essa carga inicial.
+No nosso contexto teremos somente a visualização da home com os livros cadastrados sendo listados, todos os livros da aplicação são cadastrados de forma estática através do endpoint `/seed`, que é o responsável por fazer essa carga inicial.
 
 ### Arquitetura:
 [![node](https://github.com/jonathanmdr/docker-compose/blob/master/docs/app-architecture.png)](https://github.com/jonathanmdr/docker-compose/blob/master)
