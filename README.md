@@ -29,7 +29,7 @@ Iniciando os containers do projeto:
  ```bash
 ~$ docker-compose up
  ```
-Buildando as imagens do projeto:
+Desligando os containers do projeto:
  ```bash
 ~$ docker-compose down
  ```
